@@ -5,5 +5,5 @@ internal sealed class VoteLedger
 
     public void CastVote(string voter) => voters.Add(voter);
 
-    public bool HasQuorum() => voters.Count > RequiredVotes;
+    public bool HasQuorum() => voters.Count >= RequiredVotes;
 }
